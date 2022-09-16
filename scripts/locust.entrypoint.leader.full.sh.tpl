@@ -6,6 +6,7 @@ sudo yum install -y pcre2-devel.x86_64 python gcc python3-devel tzdata curl unzi
 # LOCUST
 export LOCUST_VERSION="2.9.0"
 sudo pip3 install locust==$LOCUST_VERSION
+sudo pip3 install faker==14.2.0
 
 export PRIVATE_IP=$(hostname -I | awk '{print $1}')
 echo "PRIVATE_IP=$PRIVATE_IP" >> /etc/environment
